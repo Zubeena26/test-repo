@@ -232,7 +232,7 @@ function Mysongs() {
                   )}
                 </div>
                 <p className="text-gray-700 mb-2">Genre: {item.genre}</p>
-                <p className="text-blue-500 font-bold">Singer: {item.singer}</p>
+                <p className="text-purple-500 font-bold">Singer: {item.singer}</p>
                 <audio controls id={`audio-${item._id}`} style={{ width: '250px' }}>
                   <source src={`http://localhost:7000/${item.songUrl}`} />
                 </audio>
