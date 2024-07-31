@@ -7,7 +7,7 @@ import Anavbar from './Anavbar';
 
 function Ahome() {
   const [users, setUsers] = useState([]);
-  const [vendors,setVendors]=useState([])
+  const [vendors,setVendors]=useState([]);
   const [items, setItems] = useState([]);
   const [orders, setOrders] = useState([]);
 

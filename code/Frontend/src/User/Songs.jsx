@@ -4,6 +4,7 @@ import Sidebar from '../User/Sidebar';
 import { Button, Form, InputGroup } from 'react-bootstrap';
 import { FaHeart, FaRegHeart, FaSearch } from 'react-icons/fa';
 
+
 function Songs() {
   const [items, setItems] = useState([]);
   const [wishlist, setWishlist] = useState([]);
@@ -231,7 +232,7 @@ function Songs() {
                   )}
                 </div>
                 <p className="text-gray-700 mb-2">Genre: {item.genre}</p>
-                <p className="text-blue-500 font-bold">Singer: {item.singer}</p>
+                <p className="text-purple-500 font-bold">Singer: {item.singer}</p>
                 <audio controls id={`audio-${item._id}`} style={{ width: '250px' }}>
                   <source src={`http://localhost:7000/${item.songUrl}`} />
                 </audio>
@@ -241,17 +242,17 @@ function Songs() {
                    <div style={{display:"flex",justifyContent:"center"}}>
 
                     <Button
-                      style={{ backgroundColor: '', border: 'none',marginTop:"10px" }}
+                      style={{ backgroundColor: 'purple', border: 'none',marginTop:"10px" }}
                       onClick={() => removeFromPlaylist(item._id)}
                     >
-                     Remove From Playlist
+                     Remove From PlayList
                     </Button>
                     </div>
 
                   ) : (
                     
                    <div style={{display:"flex",justifyContent:"center"}}>
-                     <Button style={{ backgroundColor: '', border: 'none',marginTop:"10px"}} onClick={() => addToPlaylist(item._id)}>
+                     <Button style={{ backgroundColor: 'purple', border: 'none',marginTop:"10px"}} onClick={() => addToPlaylist(item._id)}>
                       
                       AddtoPlayList
                     </Button>

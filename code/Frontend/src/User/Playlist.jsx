@@ -149,7 +149,7 @@ function Playlist() {
                   </td>
                   <td>
                     <Button
-                      style={{ backgroundColor: 'blue', border: 'none' }}
+                      style={{ backgroundColor: 'purple', border: 'none' }}
                       onClick={() => removeFromPlaylist(item.itemId)}
                     >
                       Remove

@@ -218,21 +218,10 @@ function Mysongs() {
               <div>
                 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                   <p className="text-xl font-bold mb-2">{item.title}</p>
-                  {isItemInWishlist(item._id) ? (
-                    <Button
-                      style={{ backgroundColor: 'white', border: 'none' }}
-                      onClick={() => removeFromWishlist(item._id)}
-                    >
-                      <FaHeart color="red" style={{ fontSize: '20px' }} />
-                    </Button>
-                  ) : (
-                    <Button style={{ backgroundColor: 'white', border: 'none' }} onClick={() => addToWishlist(item._id)}>
-                      <FaRegHeart color="black" style={{ fontSize: '20px' }} />
-                    </Button>
-                  )}
+                  
                 </div>
                 <p className="text-gray-700 mb-2">Genre: {item.genre}</p>
-                <p className="text-blue-500 font-bold">Singer: {item.singer}</p>
+                <p className="text-purple-500 font-bold">Singer: {item.singer}</p>
                 <audio controls id={`audio-${item._id}`} style={{ width: '250px' }}>
                   <source src={`http://localhost:7000/${item.songUrl}`} />
                 </audio>

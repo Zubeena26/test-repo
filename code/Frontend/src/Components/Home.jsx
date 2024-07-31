@@ -37,7 +37,7 @@ const Home = () => {
   return (
     <div style={{ 
       backgroundColor: "black",
-      backgroundImage:"url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU5RE8W23h0r8EG_Mf7pzGOWnmf2ISNitKodSNl8OuHFUSO0-FIo6kBzegju6qXsMpGlY&usqp=CAU')",
+      backgroundImage:"url('https://thumbs.dreamstime.com/b/abstract-music-notes-multicolor-background-blurry-lights-42035356.jpg')",
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
 

@@ -19,7 +19,6 @@ const Sidebar = () => {
         </div>
         <hr/>
        <div>
-       <p style={{display:"flex",justifyContent:"center"}}> Your Library</p>
         <li>
           <Link to="/favorites">
           <p style={{paddingLeft:"10px"}}> <FaHeart /> </p> <p style={{paddingLeft:"10px"}}>Favorites</p>
